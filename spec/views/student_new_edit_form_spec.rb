@@ -2,7 +2,7 @@
 
 RSpec.describe "create and edit form" do
   describe 'create form' do
-    
+
 
     it "directly renders the form in a students/form partial" do
       view.lookup_context.prefixes = %w[students]
