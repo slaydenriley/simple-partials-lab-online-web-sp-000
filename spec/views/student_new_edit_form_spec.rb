@@ -2,13 +2,7 @@
 
 RSpec.describe "create and edit form" do
   describe 'create form' do
-    it "renders create student form from the new.html file" do
-      view.lookup_context.prefixes = %w[students]
-      student = Student.new
-      assign(:student, student)
-      render :template => "students/new.html.erb"
-      expect(rendered).to match /Create Student/
-    end
+    
 
     it "directly renders the form in a students/form partial" do
       view.lookup_context.prefixes = %w[students]
